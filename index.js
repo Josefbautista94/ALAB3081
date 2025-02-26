@@ -19,14 +19,14 @@ if (num1 % 5 === 0 && num2 % 5 === 0 && num3 % 5 === 0 && num4 % 5 === 0) {
   allNumDivisibleBy5 = false;
 }
 
-console.log(`Are all the numbers divisible by 5 ? : ${allNumDivisibleBy5}`); // My results
+console.log("Are all the numbers divisible by 5? \nResult: " + allNumDivisibleBy5); // My results
+
 
 //Check if the first number is larger than the last. Cache the result in a variable.
 
 let isFirstBiggerThanLast = num1 > num4; //Created a variable to store the result of the comparison
-console.log(
-  `Is the first number larger than the last number ? : ${isFirstBiggerThanLast}`
-); //My results
+console.log("Is the first number larger than the last number?\nResult: " + isFirstBiggerThanLast); // My results
+
 
 // Subtract the first number from the second number.
 // Multiply the result by the third number.

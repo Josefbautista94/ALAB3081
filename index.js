@@ -88,4 +88,31 @@ console.log(`Are all under 25 ? : ${isUnder25} `);
 //65.21*3 = 195.63 
 //This is more than the budget so its not doable.
 
-// const totalMiles = 1500; //Total miles of the trip
+
+const budget = 175;
+const pricePerGallon = 3;
+const totalMiles = 1500;
+const mpgAt55 = 30;
+const mpgAt60 = 28;
+const mpgAt75 = 23;
+
+const option1 = totalMiles / mpgAt55; //This is the number of gallons needed for the entire trip at 55mph
+const option2 = totalMiles / mpgAt60; //This is the number of gallons needed for the entire trip at 60mph
+const option3 = totalMiles / mpgAt75; //This is the number of gallons needed for the entire trip at 75mph
+
+const cost1 = option1 * pricePerGallon; //This is the cost of the trip at 55mph
+const cost2 = option2 * pricePerGallon; //This is the cost of the trip at 60mph
+const cost3 = option3 * pricePerGallon; //This is the cost of the trip at 75mph
+
+const tripTime1 = totalMiles / 55; //This is the time it would take to complete the trip at 55mph
+const tripTime2 = totalMiles / 60; //This is the time it would take to complete the trip at 60mph
+const tripTime3 = totalMiles / 75; //This is the time it would take to complete the trip at 75mph
+
+console.log(`When you're going at 55 Miles per hour you would need ${option1} gallons for the trip
+it would cost you $${cost1} and you would get there in ${tripTime1} hours, Lets check if we can do better. `);
+
+console.log(`When you're going at 60 Miles per hour you would need ${option2} gallons for the trip
+it would cost you $${cost2} and you would get there in ${tripTime2} hours, This is the quickest way to get there and it's affordable! `);
+
+    console.log(`When you're going at 75 Miles per hour you would need ${option3} gallons for the trip
+it would cost you $${cost3} and you would get there in ${tripTime3} hours, This goes over the budget so it doesn't make sense for the trip!`);

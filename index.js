@@ -10,20 +10,11 @@ console.log(`Sum of all the 4 numbers : ${num1 + num2 + num3 + num4}`); // This 
 
 //Check if all numbers are divisible by 5. Cache the result in a variable.
 
-let allNumDivisibleBy5; //Created a variable to store the result I would get
-
-//Created an if statement with && operators to check if ALL my numbers are divisible by 5
-if (num1 % 5 === 0 && num2 % 5 === 0 && num3 % 5 === 0 && num4 % 5 === 0) {
-  allNumDivisibleBy5 = true;
-} else {
-  allNumDivisibleBy5 = false;
-}
-
-console.log("Are all the numbers divisible by 5? \nResult: " + allNumDivisibleBy5); // My results
+const allNumDivisibleBy5 = (num1 % 5 === 0 && num2 % 5 === 0 && num3 % 5 === 0 && num4 % 5 === 0);
+console.log("Are all the numbers divisible by 5?\nResult: " + allNumDivisibleBy5); // My results
 
 
 //Check if the first number is larger than the last. Cache the result in a variable.
-
 let isFirstBiggerThanLast = num1 > num4; //Created a variable to store the result of the comparison
 console.log("Is the first number larger than the last number?\nResult: " + isFirstBiggerThanLast); // My results
 
@@ -116,3 +107,4 @@ it would cost you $${cost2} and you would get there in ${tripTime2} hours, This 
 
     console.log(`When you're going at 75 Miles per hour you would need ${option3} gallons for the trip
 it would cost you $${cost3} and you would get there in ${tripTime3} hours, This goes over the budget so it doesn't make sense for the trip!`);
+
